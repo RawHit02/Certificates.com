@@ -100,3 +100,36 @@ footer img {
     margin-top: 0.2rem; /* Adjust spacing for mobile */
   }
 }
+  @media (max-width: 375px) {
+  .certificate-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query for iPhone XR, iPhone 12 Pro, Pixel 5 */
+@media (max-width: 414px) {
+  .certificate-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query for Samsung Galaxy S8, Samsung */
+@media (max-width: 412px) {
+  .certificate-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query for iPad */
+@media (max-width: 820px) {
+  .certificate-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Query for larger screens */
+@media (min-width: 821px) {
+  .certificate-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
