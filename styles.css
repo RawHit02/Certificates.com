@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#ECF2FF;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.certificate-section {
+  text-align: center;
+  margin: 3rem 0;
+  position: relative;
+
+}
+
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.certificate-box {
+  width: 15%; 
+  margin: 3rem;
+  position: relative; 
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, border 0.3s;
+  border: 1.5px solid #333;
+  transition: transform 0.3s, border 0.3s, background-color 0.3s;
+  background-color: #E3F4F4;
+}
+.certificate-box img {
+ width: 50%;
+  height: auto;
+  display: flex;
+  margin: 0 auto; /* Center the image horizontally */
+  
+}
+.certificate-description {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.certificate-box:hover {
+  transform: scale(1.5);
+  border: 2px solid #333;
+  background-color: #FFF4F4;
+   
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-text {
+  flex: 1; /* Fill available space */
+  text-align: center;
+}
+
+.instructions-box {
+  width: 20%;
+  padding: 3px;
+  background-color: #f7f7f7;
+  border: 2px solid black;
+  color: red;
+  margin-top: 2rem;
+  
+}
+@media (max-width: 600px) {
+  .certificate-box {
+    width: 100%; /* Full width for mobile */
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+  
+  .certificate-title,
+  .certificate-description {
+    margin-top: 0.2rem; /* Adjust spacing for mobile */
+  }
+}
